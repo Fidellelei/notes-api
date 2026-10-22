@@ -38,7 +38,7 @@ def create_notes(users):
             notes.append(Note(
                 title=fake.sentence(nb_words=5).rstrip("."),
                 content=fake.paragraph(nb_sentences=4),
-                user=user,
+                user_id=user.id,
             ))
     db.session.add_all(notes)
     db.session.commit()
