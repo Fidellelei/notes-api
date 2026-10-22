@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.pytest_cache/
+
+# Local SQLite database (recreate with `flask db upgrade` + `python seed.py`)
+*.db
+instance/
+
+.DS_Store
+.vscode/
